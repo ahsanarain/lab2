@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Comic Sans MS';
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    /*padding: 20px;*/
+    text-align: left;
+    background: #ddd;
+    margin-top: 10px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header" >
+    <img style="display:inline" width="170" height="110" src="g.png">
+    <div style="word-spacing:30px">
+    <a href="www.google.com" style="color:black">Home</a>
+    <a href="www.yahoo.com" style="color:black">About</a>
+    <a href="www.facebook.com" style="color:black">Contact</a></div>
+    
+  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>How Tiny Food Vedios Are Made</h2>
+      <h5>Published on Apr 21, 2018</h5>
+      <iframe width="340" height="240" src="https://www.youtube.com/embed/Swv1il6PpN4">
+            </iframe>
+      <p>INSIDER</p>
+      <p>STiny food creators all over the world are spending hours scaling down recipes and handcrafting the smallest kitchenware to make them. Seeing something familiar in an unfamiliar environment is the perfect recipe for viewer satisfaction. Here is how these tiny food artists do it.</p>
+    </div>
+    <div class="card">
+      <h2>PALM HEARTS VEGAN CALAMARI</h2>
+      <h5>Published on Aug 8, 2017</h5>
+      <iframe width="340" height="240" src="https://www.youtube.com/embed/WFvg75x7n3U">
+            </iframe>
+      <p>The Organic Gypsy</p>
+      <p>This is the best recipe for no fish calamari. This calamari is made from palm hearts and tastes just like the real thing. The texture is surprisingly similar to octopus calamari. But without the veiny parts. You have to try it! For a more detailed recipe. Please have a look on my website.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="a.jpg" alt="Avatar" style="border-radius: 50%";"width:200px" width="150" height="150">
+      <p><h3>Ahsan Arain</h3>I am a proffessional software Engineer and the good Web_Designer...</p>
+    </div> 
+    <div class="card">
+      <h3>Categories</h3>
+      <ul type="dots">
+    <li>Chicken</li>
+    <li>Chinese</li>
+    <li>Desserts</li>
+    <li>Sauces</li>
+    <li>How To</li>
+  </ul>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <img src="1.png">
+      <img src="2.png">
+      <img src="3.png">
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Subscribe to our newsletter and never miss another post!</p>
+  Name:<input type="text" name="name">
+  Email:<input type="text" name="email">
+  <input type="submit" value="Subscribe" style="font-family:Comic Sans MS; background-color:black;  color:white">
+  <h2 style="font-weight:bold">Cook it</h2>
+  <h5>Copyright © 2018 • Back to Top • Contact • Privacy Policy • Powered by the Genesis Framework</h5>
+</div>
+
+</body>
+</html>
